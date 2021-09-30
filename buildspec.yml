@@ -40,8 +40,8 @@ artifacts:
   files: build.json
 env:
   parameter-store:         
-<<<<<<< HEAD
+
     JWT_SECRET: JWT_SECRET
-=======
+
     JWT_SECRET: JWT_SECRET
->>>>>>> 43a29d20bf44ad4813064c839bbe35f245f35726
+
