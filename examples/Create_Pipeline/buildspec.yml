@@ -6,4 +6,3 @@ phases:
   build:
     commands:
       - echo Hello from Code Build!
-
