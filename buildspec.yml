@@ -49,7 +49,7 @@ artifacts:
 env:
   parameter-store:         
     JWT_SECRET: JWT_SECRET
-    SECRET: JWT_SECRET
+    SECRET: JWT_SECRET2
     TOKEN: JWT_TOKEN
     EMAIL: JWT_EMAIL
     PASSWORD: JWT_PASSWORD
