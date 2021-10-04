@@ -1,5 +1,4 @@
 .DS_Store
-.env*
 .flaskenv
 *.pyc
 *.pyo
@@ -29,3 +28,9 @@ htmlcov/
 .direnv
 
 .github/**
+
+aws*
+ci-cd-codepipeline.cfn
+simple-jwt-api
+trust
+iam-role-policy
