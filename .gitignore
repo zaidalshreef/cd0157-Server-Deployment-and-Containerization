@@ -34,3 +34,4 @@ ci-cd-codepipeline.cfn
 simple-jwt-api
 trust
 iam-role-policy
+simple*
