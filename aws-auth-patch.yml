@@ -4,7 +4,7 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::697070142622:role/<EXISTENT_ROLE_INFORMATION>
+      rolearn: arn:aws:iam::697070142622:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-M25RU4PG9FE8
       username: system:node:{{EC2PrivateDNSName}}
     - groups:
       - system:masters
@@ -14,37 +14,18 @@ data:
     []
 kind: ConfigMap
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"mapRoles":"- rolearn: arn:aws:iam::697070142622:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-1WUTTC155BP7V\n  username: system:node:{{EC2PrivateDNSName}}\n  groups:\n    - system:bootstrappers\n    - system:nodes\n"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"aws-auth","namespace":"kube-system"}}
-  creationTimestamp: "2021-10-03T18:54:57Z"
+  creationTimestamp: "2021-10-04T10:02:44Z"
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:data: {}
+      f:data:
+        .: {}
+        f:mapRoles: {}
     manager: vpcLambda
     operation: Update
-    time: "2021-10-03T18:54:57Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:kubectl.kubernetes.io/last-applied-configuration: {}
-    manager: kubectl-client-side-apply
-    operation: Update
-    time: "2021-10-03T19:05:08Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data:
-        f:mapRoles: {}
-    manager: kubectl-edit
-    operation: Update
-    time: "2021-10-03T19:22:00Z"
+    time: "2021-10-04T10:02:44Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "4411"
-  uid: edff2207-06d9-4598-a15d-25ae1a9167a8
+  resourceVersion: "1223"
+  uid: ae807687-5b34-4b9d-aae0-697ff8e92442
